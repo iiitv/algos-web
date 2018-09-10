@@ -12,6 +12,7 @@ yard build
 yard test
 ```
 ## deploy
+requires push access, use carefully.
 ```
 npm run deploy
 ```
