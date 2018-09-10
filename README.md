@@ -1,18 +1,22 @@
 # algos
-[![Build Status](https://travis-ci.org/mohitkyadav/algos.svg?branch=master)](https://travis-ci.org/mohitkyadav/algos)
-## run
+[![Build Status](https://travis-ci.org/iiitv/algos-web.svg?branch=master)](https://travis-ci.org/iiitv/algos-web)
+
+## Guidelines
+* Add tests relevant to a component or service
+
+## Useful commands
+
+### run
 ```
 yarn start
 ```
-## build
 ```
 yard build
 ```
-## test
 ```
 yard test
 ```
-## deploy
+### deploy
 requires push access, use carefully.
 ```
 npm run deploy

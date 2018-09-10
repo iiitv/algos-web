@@ -14,10 +14,3 @@ install:
 script:
   - yarn test
   - yarn build
-
-deploy:
-  - provider: pages
-    skip_cleanup: true
-    local_dir: "build"
-    on:
-      branch: master
