@@ -6,18 +6,26 @@
 
 ## Useful commands
 
+### install the dependencies
+```
+yarn install
+```
 ### run
 ```
 yarn start
 ```
 ```
-yard build
+yarn build
 ```
 ```
-yard test
+yarn test
 ```
 ### deploy
 requires push access, use carefully.
 ```
 npm run deploy
+```
+OR
+```
+yarn run deploy
 ```
