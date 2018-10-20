@@ -10,6 +10,11 @@ class Header extends Component {
                 <ul className="uk-navbar-nav">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/home">Algos</Link></li>
+                    <li style = {{ alignSelf: "center" }}>
+                      <label>
+                        <input className="uk-checkbox uk-margin-small-right" type="checkbox" onChange={this.props.toggleCanvas}/>Toggle Canvas
+                      </label>
+                    </li>
                 </ul>
             </div>
         </nav>
