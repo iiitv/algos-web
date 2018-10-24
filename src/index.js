@@ -12,7 +12,9 @@ ReactDOM.render(
     <div>
       <App/>
       <Switch>
-        <Route path="/home" component={HomePage}></Route>
+        {/* New PArrellax component */}
+        {/* <Route exact path="/" component={HomePage}></Route> */}
+        <Route exact path="/home" component={HomePage}></Route>
       </Switch>
     </div>
   </BrowserRouter>,
