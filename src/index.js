@@ -12,7 +12,7 @@ import HomeComponent from './HomeComponent.js'
 ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div>
-      <App/>
+      
       <Switch>
         {/* New PArrellax component */}
         {/* <Route exact path="/" component={HomePage}></Route> */}
