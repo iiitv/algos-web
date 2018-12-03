@@ -35,7 +35,7 @@ export default class HomeComponent extends Component {
 					offset={1.05}
 					style={{pointerEvents:'none'}}
 					speed={-0.3}>
-					<img src={Coding} style={{opacity:'0.6',width:'80', marginLeft: '60%'}}/>
+					<img alt="text-editor" src={Coding} style={{opacity:'0.6',width:'80', marginLeft: '60%'}}/>
 					</Parallax.Layer>
 
 					 <Parallax.Layer
@@ -50,8 +50,8 @@ export default class HomeComponent extends Component {
 					 offset={1.75}
 					 speed={1.6}
 					 >
-						 <img src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'10%'}}/>
-						 <img src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'40%'}}/>
+						 <img alt="file_1" src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'10%'}}/>
+						 <img alt="file_2" src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'40%'}}/>
 					 </Parallax.Layer>
 
 					<Parallax.Layer
@@ -59,7 +59,7 @@ export default class HomeComponent extends Component {
 					speed={+0.6}
 					
 					>
-					<img src={Screen} style={{opacity:'0.6', width:'40%', marginLeft:'30%'}}/>
+					<img alt="laptop" src={Screen} style={{opacity:'0.6', width:'40%', marginLeft:'30%'}}/>
 					</Parallax.Layer>
 
 					 <Parallax.Layer

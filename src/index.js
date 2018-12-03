@@ -4,7 +4,6 @@ import { Route } from "react-router";
 import { BrowserRouter, Switch } from "react-router-dom";
 import './index.css';
 import HomePage from './components/home/HomePage';
-import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import HomeComponent from './components/welcome/HomeComponent.js'
 
