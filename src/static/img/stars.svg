@@ -1,0 +1,38 @@
+<svg width="139px" height="134px" viewBox="0 8 139 134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 8.000000)">
+        <g id="lower" transform="translate(0.000000, 75.000000)">
+            <path d="M138.429688,50.0002313 C138.429688,54.4183816 134.267924,58 129.131975,58 L9.29771278,58 C4.1627278,58 0,54.426195 0,50.0002313 L0,15 L138.429688,15" id="Rectangle-2-Copy-2" fill="#BCBCBC"></path>
+            <path d="M138.429688,46.0002313 C138.429688,50.4183816 134.267924,54 129.131975,54 L9.29771278,54 C4.1627278,54 0,50.426195 0,46.0002313 L0,11 L138.429688,11" id="Rectangle-2-Copy" fill="#D8D8D8"></path>
+            <rect id="Rectangle-3-Copy" fill="#BCBCBC" x="0" y="0" width="138.429688" height="5"></rect>
+            <rect id="Rectangle-4-Copy-2" fill="#BDBDBD" x="91" y="32" width="32" height="9" rx="4.5"></rect>
+            <g id="dots-copy-2" transform="translate(13.000000, 32.000000)">
+                <circle id="Oval-Copy-2" fill="#FFFFFF" cx="28" cy="4" r="4"></circle>
+                <circle id="green" fill="#5DA3BC" cx="4" cy="4" r="4"></circle>
+                <circle id="green" fill="#5DBC85" cx="16" cy="4" r="4"></circle>
+            </g>
+        </g>
+        <g id="middle" transform="translate(0.000000, 43.000000)">
+            <rect id="Rectangle" fill="#D8D8D8" x="0" y="0" width="138.429688" height="43"></rect>
+            <rect id="Rectangle-3-Copy" fill="#BCBCBC" x="0" y="38" width="138.429688" height="5"></rect>
+            <rect id="Rectangle-4-Copy" fill="#BDBDBD" x="91" y="17" width="32" height="9" rx="4.5"></rect>
+            <g id="dots-copy" transform="translate(13.000000, 17.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="4" cy="4" r="4"></circle>
+                <circle id="Oval-Copy-2" fill="#FFFFFF" cx="28" cy="4" r="4"></circle>
+                <circle id="green" fill="#5DBC85" cx="16" cy="4" r="4"></circle>
+            </g>
+        </g>
+        <g id="upper">
+            <path d="M0,7.99976867 C0,3.58161843 3.57855634,0 7.9902731,0 L130.439414,0 C134.85232,0 138.429688,3.57380498 138.429688,7.99976867 L138.429688,43 L0,43 L0,7.99976867 Z" id="Rectangle-2" fill="#D8D8D8"></path>
+            <rect id="Rectangle-3" fill="#BCBCBC" x="0" y="38" width="138.429688" height="5"></rect>
+            <rect id="Rectangle-4" fill="#BDBDBD" x="91" y="17" width="32" height="9" rx="4.5"></rect>
+            <g id="dots" transform="translate(13.000000, 18.000000)">
+                <circle id="white" fill="#FFFFFF" cx="16" cy="4" r="4"></circle>
+                <circle id="white" fill="#FFFFFF" cx="28" cy="4" r="4"></circle>
+                <circle id="green" fill="#5DBC85" cx="4" cy="4" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
