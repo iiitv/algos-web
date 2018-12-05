@@ -6,15 +6,13 @@ import stars from '../../static/img/Endless-Constellation.svg'
 import Coding from '../../static/img/coding.png'
 import DryRun from '../../static/img/code.png'
 import Screen from '../../static/img/screen.png'
-import Footer from './Footer'
+import './HomeComponent.css'
 
 export default class HomeComponent extends Component {
 	render() {
 		const styles = {
             fontFamily: 'Menlo-Regular, Menlo, monospace',
-            fontSize: 24,
             lineHeight: '10px',
-            color: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center'
         }
 		return (
@@ -35,7 +33,7 @@ export default class HomeComponent extends Component {
 					offset={1.05}
 					style={{pointerEvents:'none'}}
 					speed={-0.3}>
-					<img alt="text-editor" src={Coding} style={{opacity:'0.6',width:'80', marginLeft: '60%'}}/>
+					<img alt="text-editor" className='image-text-editor' src={Coding}/>
 					</Parallax.Layer>
 
 					 <Parallax.Layer
@@ -43,15 +41,15 @@ export default class HomeComponent extends Component {
 					 style={styles}
 					 speed={1}
 					 onClick={() => this.refs.parallax.scrollTo(2)}>
-						Explore the 'Ocean of Data Structures and Algorithms'
+						<h2 className='middle-container-heading'>Explore the <br/>'Ocean of Data Structures and Algorithms'</h2>
 					 </Parallax.Layer>
 
 					 <Parallax.Layer
 					 offset={1.75}
 					 speed={1.6}
 					 >
-						 <img alt="file_1" src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'10%'}}/>
-						 <img alt="file_2" src={DryRun} style={{opacity:'0.6', width:'20%', marginLeft:'40%'}}/>
+						 <img alt="file_1" src={DryRun} style={{opacity:'0.4', width:'20%', marginLeft:'10%'}}/>
+						 <img alt="file_2" src={DryRun} style={{opacity:'0.4', width:'20%', marginLeft:'40%'}}/>
 					 </Parallax.Layer>
 
 					<Parallax.Layer
@@ -59,7 +57,7 @@ export default class HomeComponent extends Component {
 					speed={+0.6}
 					
 					>
-					<img alt="laptop" src={Screen} style={{opacity:'0.6', width:'40%', marginLeft:'30%'}}/>
+					<img alt="laptop" src={Screen} className='footer-image'/>
 					</Parallax.Layer>
 
 					 <Parallax.Layer
@@ -68,9 +66,8 @@ export default class HomeComponent extends Component {
 					 speed={1}
 					 onClick={() => this.refs.parallax.scrollTo(0)}>
 						<div>
-							<Footer/>
-							<br/><br/>
-						<Link to='/home'>Visit the Home page</Link>
+							<h4 className='footer-heading'>Hola Guys!</h4>
+							<h5 className='footer-link'><Link to='/home'>Visit the Home page</Link></h5>
 						</div>
 					 </Parallax.Layer>
 				</Parallax>
