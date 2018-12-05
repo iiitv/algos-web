@@ -28,4 +28,5 @@ dist
 
 .firebase/
 .vscode/
+.vs/
 .idea/
