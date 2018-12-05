@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import programmer from '../../static/img/programmer.png'
 import './HomeComponent.css'
 

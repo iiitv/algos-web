@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Parallax from 'react-springy-parallax'
 import { Link } from 'react-router-dom'
+
 import Header from './Header'
 import stars from '../../static/img/Endless-Constellation.svg'
 import Coding from '../../static/img/coding.png'
@@ -14,7 +15,8 @@ export default class HomeComponent extends Component {
 			fontFamily: 'Menlo-Regular, Menlo, monospace',
 			lineHeight: '10px',
 			display: 'flex', alignItems: 'center', justifyContent: 'center'
-		}
+    }
+
 		return (
 			<Parallax ref="parallax" pages={3} style={{ backgroundImage: `url(${stars})` }}>
 				<Parallax.Layer offset={0} speed={1} style={{ backgroundColor: '#243B4A', opacity: '0.5' }} />
