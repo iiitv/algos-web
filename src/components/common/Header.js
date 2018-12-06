@@ -9,8 +9,8 @@ class Header extends Component {
             <div className="uk-navbar-left">
             <BrowserRouter>
                 <ul className="uk-navbar-nav">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/home">Algos</Link></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/home">Algos</Link></li>
                 </ul>
             </BrowserRouter>
             </div>
