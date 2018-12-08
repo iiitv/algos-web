@@ -5,7 +5,7 @@ import { BrowserRouter, Switch } from "react-router-dom";
 import { Provider } from 'react-redux';
 
 import store from './store';
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 import HomePage from './components/home/HomePage';
@@ -28,4 +28,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
-registerServiceWorker();
+// registerServiceWorker();
