@@ -1,4 +1,10 @@
 {
-  "version": 2,
-  "name": "algos-web"
+  "version": 1,
+  "name": "algos-web",
+  "scale": {
+    "sfo1": {
+      "min": 0,
+      "max": "auto"
+    }
+  }
 }
