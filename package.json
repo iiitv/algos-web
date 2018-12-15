@@ -22,9 +22,14 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "gh-pages": "^1.2.0",
+    "husky": "^1.2.1",
+    "prettier": "1.15.3",
+    "pretty-quick": "^1.8.0"
   }
 }

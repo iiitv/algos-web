@@ -9,14 +9,10 @@ import {
 
 // import isEmpty from './../utils/validate';
 
-export const loading = () => {
-  return {
-    type: LOADING
-  };
-};
+export const loading = () => ({
+  type: LOADING,
+});
 
-export const loaded = () => {
-  return {
-    type: LOADED
-  };
-};
+export const loaded = () => ({
+  type: LOADED,
+});
