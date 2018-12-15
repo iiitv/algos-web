@@ -8,18 +8,17 @@ class HomePage extends Component {
           <div className="uk-grid">
             <div className="uk-width-1-5@s" style={{ background: "#0e0b0bb3", color: "white" }}>
               <div className="uk-offcanvas-content">
-                <button className="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-push">Push</button>
+                <button className="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #offcanvas-push">Push</button>
 
-                <div id="offcanvas-push" uk-offcanvas="mode: push, overlay: true">
-                    <div className="uk-offcanvas-bar">
+                <div id="offcanvas-push" data-uk-offcanvas="mode: push; overlay: true">
+                  <div className="uk-offcanvas-bar">
 
-                        <button className="uk-offcanvas-close" type="button" uk-close></button>
+                    <button className="uk-offcanvas-close" type="button" data-uk-close="true"></button>
 
-                        <h3>Title</h3>
+                    <h3>Algorithms</h3>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-                    </div>
+                    <p>Comming soon.</p>
+                  </div>
                 </div>
               </div>
             </div>
