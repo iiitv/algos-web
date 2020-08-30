@@ -16,7 +16,11 @@ class Header extends Component {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div>
-          {this.props.gh.loading ? <span className="uk-text-danger" data-uk-spinner="ratio: 4.5" /> : null}
+          {this.props.gh.loading ? (
+            <div>
+              <span className="uk-text-danger" data-uk-spinner="ratio: 4.5" />
+            </div>
+          ) : null}
           <h2 className="header-title">IIITV Open Source</h2>
           <h3 className="header-subtitle">Welcomes You</h3>
         </div>

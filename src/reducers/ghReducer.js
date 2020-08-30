@@ -1,42 +1,38 @@
-import {
-  LOADING,
-  LOADED,
-  AUTHOR_PROFILE,
-  ERROR
-} from '../actions/types';
+/* eslint-disable prettier/prettier */
+import { LOADING, LOADED, AUTHOR_PROFILE, ERROR } from '../actions/types';
 
 const initialState = {
-  loading: false,
+  loading: true,
   authorProfile: {},
   errors: {
-    error: []
-  }
+    error: [],
+  },
 };
 
 export default function(state = initialState, action) {
-	switch (action.type) {
+  switch (action.type) {
     case AUTHOR_PROFILE:
-			return {
+      return {
         ...state,
         userProfile: action.payload,
-        loading: false
+        loading: false,
       };
     case LOADING:
       return {
         ...state,
-        loading: true
+        loading: false,
       };
     case LOADED:
       return {
         ...state,
-        loading: false
+        loading: false,
       };
     case ERROR:
       return {
         ...state,
-        errors: action.payload
+        errors: action.payload,
       };
-		default:
-			return state;
-	}
+    default:
+      return state;
+  }
 }
