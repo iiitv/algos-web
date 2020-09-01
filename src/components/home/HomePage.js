@@ -33,6 +33,8 @@ class HomePage extends Component {
             <li key={item.sha}>{item.name}</li>
           </a>
         );
+      } else {
+        return null;
       }
     });
     return (
