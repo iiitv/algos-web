@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 
-function HomePage() {
+const HomePage = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -15,21 +15,28 @@ function HomePage() {
     })
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
-        let val = data.map((item) => {
-          if (item.type === 'dir' && item.name !== '.bin') {
-            return (
-              <a key={item.sha} href={item.html_url}>
-                <li key={item.sha}>{item.name}</li>
-              </a>
-            );
-          } else {
-            return null;
-          }
-        });
-        setData(val);
+        setData(data);
       });
   }, []);
+
+  let val = null;
+  if (data) {
+    val = data.filter((item) => {
+      return item.type === 'dir' && item.name !== '.bin';
+    });
+  }
+
+  let list = null;
+
+  if (val) {
+    list = val.map((item) => {
+      return (
+        <a key={item.sha} href={item.html_url}>
+          <li key={item.sha}>{item.name}</li>
+        </a>
+      );
+    });
+  }
 
   return (
     <div className="HomePage">
@@ -61,11 +68,11 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div>
-        <ul>{data}</ul>
-      </div>
+      <>
+        <ul>{list}</ul>
+      </>
     </div>
   );
-}
+};
 
 export default HomePage;
