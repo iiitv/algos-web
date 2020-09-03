@@ -15,11 +15,11 @@ function HomePage() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         let val = data.map((item) => {
           if (item.type === 'dir' && item.name !== '.bin') {
             return (
-              <a href={item.html_url}>
+              <a key={item.sha} href={item.html_url}>
                 <li key={item.sha}>{item.name}</li>
               </a>
             );
