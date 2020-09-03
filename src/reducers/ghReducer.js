@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { LOADING, LOADED, AUTHOR_PROFILE, ERROR } from '../actions/types';
 
 const initialState = {
@@ -9,7 +8,7 @@ const initialState = {
   },
 };
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
   switch (action.type) {
     case AUTHOR_PROFILE:
       return {
