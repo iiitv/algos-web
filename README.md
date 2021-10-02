@@ -32,4 +32,4 @@ yarn deploy
 ### Design Link
 [Click here](https://www.figma.com/file/A4vv1Di3lTGgrK0YoLDtEZ/Contribut-a-thon-Algos?node-id=0%3A1)
 
-### Go to wiki for how to contribute.
+### Go to wiki for contribution guidelines.
