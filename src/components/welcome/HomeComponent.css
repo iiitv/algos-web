@@ -10,6 +10,24 @@
   font-size: 32px;
 }
 
+.particles {
+  position: absolute;
+  right: calc(3rem - 2vw);
+  top: calc(9rem - 6vw);
+}
+.particles2 {
+  position: absolute;
+  right: calc(1rem - 4vw);
+  top: calc(99rem - 2vw);
+}
+.particles3 {
+  position: absolute;
+  top: calc(140rem - 2vw);
+}
+.particles4 {
+  display: none;
+}
+
 .header-image {
   display: block;
   margin-left: 100px;

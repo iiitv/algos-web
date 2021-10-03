@@ -1,0 +1,24 @@
+@media screen and (max-width:1000px)
+{
+       
+    .particles{
+        position: absolute;
+        right: calc(3rem - 2vw);
+        top: calc(8rem + 6vw);
+        }
+        .particles2{
+        position: absolute;
+        top: calc(69rem - 2vw)
+        }
+        .particles3{
+        position: absolute;
+        top: calc(160rem - 2vw);
+            height: 150px;
+        }
+        .particles4{
+            display: block;
+            position: absolute;
+        top: calc(120rem - 2vw);
+            height: 150px;
+        }
+}

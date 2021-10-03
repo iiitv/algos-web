@@ -5,17 +5,21 @@ import { connect } from 'react-redux';
 import { loading, loaded } from './../../actions/ghActions';
 import programmer from '../../static/img/programmer.png';
 import './HomeComponent.css';
+import ParticleBackground from './particlebackground';
 
 class Header extends Component {
   componentDidMount() {
     this.props.loading();
-    // this.props.loaded();
   }
 
   render() {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div>
+          <div className="particles">
+            <ParticleBackground />
+            <ParticleBackground />
+          </div>
           {this.props.gh.loading ? (
             <div>
               <span className="uk-text-danger" data-uk-spinner="ratio: 4.5" />
