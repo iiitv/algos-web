@@ -8,6 +8,7 @@ import Coding from '../../static/img/coding.png';
 import DryRun from '../../static/img/code.png';
 import Screen from '../../static/img/screen.png';
 import './HomeComponent.css';
+import './HomeComponent_responsive.css'
 import ParticleBackground from './particlebackground';
 
 export default class HomeComponent extends Component {
@@ -29,6 +30,12 @@ export default class HomeComponent extends Component {
         <Parallax.Layer offset={0} style={styles} speed={0.5} onClick={() => this.refs.parallax.scrollTo(1)}>
           <Header />
           <div className = "particles2">
+          <ParticleBackground />      
+          </div>
+          <div className = "particles3">
+          <ParticleBackground />      
+          </div>    
+          <div className = "particles4">
           <ParticleBackground />      
           </div>    
         </Parallax.Layer>
