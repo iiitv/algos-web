@@ -17,7 +17,8 @@
     "redux-thunk": "^2.3.0",
     "script": "^0.1.4",
     "tsparticles": "^1.35.2",
-    "uikit": "^3.5.7"
+    "uikit": "^3.5.7",
+    "yarn": "^1.22.15"
   },
   "scripts": {
     "start": "react-scripts start",

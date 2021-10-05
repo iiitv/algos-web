@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from '../navbar/Navbar';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -57,7 +58,9 @@ const HomePage = () => {
 
                 <h3>Algorithms</h3>
 
-                <p>Comming soon.</p>
+                <div>
+                  <Navbar />
+                </div>
               </div>
             </div>
           </div>

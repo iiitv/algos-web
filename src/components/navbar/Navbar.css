@@ -1,0 +1,18 @@
+.navbar {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+ul li {
+  list-style-type: none;
+}
+.ri-subtract-line {
+  width: 100px;
+  margin-right: 0.75rem;
+}
+.navbar-item {
+  margin: 0.75rem 0;
+}
+.navbar-item p {
+  display: flex;
+  align-items: center;
+}
