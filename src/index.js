@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route } from 'react-router';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
-
+import Algorithm from './components/Algorithms/Algorithm';
 // import * as serviceWorker from './serviceWorker';
 import store from './store';
 import './index.css';
@@ -18,6 +18,7 @@ ReactDOM.render(
         {/* <Route exact path="/" component={HomePage}></Route> */}
         <Route exact path="/" component={HomeComponent}></Route>
         <Route exact path="/home" component={HomePage}></Route>
+        <Route exact path="/algorithm" component={Algorithm}></Route>
       </Switch>
     </BrowserRouter>
   </Provider>,
