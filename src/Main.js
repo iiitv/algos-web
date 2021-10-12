@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       {loading ? (
         <div className="loadd">
-          <HashLoader color={'EC0103'} loading={loading} size={60} />
+          <HashLoader color={'white'} loading={loading} size={60} />
         </div>
       ) : (
         <Switch>
