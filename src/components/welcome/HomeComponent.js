@@ -69,6 +69,8 @@ export default class HomeComponent extends Component {
           </div>
         </Parallax.Layer>
       </Parallax>
+      //   )}
+      // </div>
     );
   }
 }
