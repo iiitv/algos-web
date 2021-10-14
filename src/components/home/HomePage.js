@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
+import axios from 'axios';
 
 const HomePage = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://cors-anywhere.herokuapp.com/https://api.github.com/repos/iiitv/algos/contents', {
-      method: 'GET',
-      credentials: 'same-origin',
-      headers: new Headers({
-        'Access-Control-Allow-Origin': '*',
-      }),
-      mode: 'cors',
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-      });
+    const getDataFromGit = async () => {
+      try {
+        const resp = await axios.get('https://api.github.com/repos/iiitv/algos/contents');
+        console.log(resp.data);
+        setData(resp.data);
+      } catch (e) {
+        console.log(e.response, 'error');
+      }
+    };
+    getDataFromGit();
   }, []);
 
   let val = null;
