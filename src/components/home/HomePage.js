@@ -62,13 +62,15 @@ const HomePage = () => {
           </div>
         </div>
         <div className="uk-width-4-5@s">
-          <div style={{ background: 'blue' }} className="uk-padding-small">
+          <div style={{ background: 'blue'  } } className="uk-padding-small">
             <p>yomo</p>
           </div>
         </div>
       </div>
       <>
-        <ul>{list}</ul>
+        <div className="list">
+          <ul>{list}</ul>
+        </div>
       </>
     </div>
   );
