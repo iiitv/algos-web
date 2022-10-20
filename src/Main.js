@@ -25,7 +25,7 @@ function App() {
           {/* New PArrellax component */}
           {/* <Route exact path="/" component={HomePage}></Route> */}
           <Route exact path="/" component={HomeComponent}></Route>
-          <Route exact path="/home" component={HomePage}></Route>
+          <Route className="homepage" exact path="/home" component={HomePage}></Route>
         </Switch>
       )}
     </div>
