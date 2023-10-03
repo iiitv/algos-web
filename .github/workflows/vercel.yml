@@ -1,4 +1,3 @@
-# .github/workflows/preview.yml
 name: preview
 on:
   pull_request:
@@ -17,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: yarn
-      - run: yarn install --immutable
-      - run: yarn global add vercel
-      - run: yarn vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-      - run: yarn vercel build --token=${{ secrets.VERCEL_TOKEN }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm install -g vercel # Add this line to install Vercel CLI
+      - run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
       - id: deploy
-        run: echo "::set-output name=url::$(yarn vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
+        run: echo "::set-output name=url::$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})"
