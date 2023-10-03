@@ -4,6 +4,7 @@ import HomePage from './components/home/HomePage';
 import HomeComponent from './components/welcome/HomeComponent.js';
 import HashLoader from 'react-spinners/HashLoader';
 import './Main.css';
+import Algorithm from './components/algorithm/Algorithm';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -26,6 +27,7 @@ function App() {
           {/* <Route exact path="/" component={HomePage}></Route> */}
           <Route exact path="/" component={HomeComponent}></Route>
           <Route className="homepage" exact path="/home" component={HomePage}></Route>
+          <Route path="/algorithm/:name" component={Algorithm} />
         </Switch>
       )}
     </div>
