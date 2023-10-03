@@ -20,7 +20,7 @@ const Algorithm = () => {
       }
     };
     getDataFromGit();
-  }, []);
+  }, [name]);
 
   console.log(data)
 
