@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 import axios from 'axios';
-import {Link} from "react-router-dom";
 
 const HomePage = () => {
   const [data, setData] = useState(null);
@@ -31,9 +30,9 @@ const HomePage = () => {
   if (val) {
     list = val.map((item) => {
       return (
-        <Link key={item.sha} to={`algorithm/${item.name}`}>
+        <a key={item.sha} href={item.html_url}>
           <li key={item.sha}>{item.name}</li>
-        </Link>
+        </a>
       );
     });
   }
