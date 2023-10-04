@@ -1,0 +1,23 @@
+.list ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.list ul li{
+    padding: 10px;
+    list-style: none;
+    border:1px solid white;
+    margin:10px;
+    color: white;
+    width:40vw;
+   
+}
+.list{
+    width: 100vw;
+    height:100%;
+    background-color:rgb(16, 29, 68);
+}
+
+
