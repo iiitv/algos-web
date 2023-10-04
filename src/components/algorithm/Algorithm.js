@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
 import './Algorithm.css';
 
@@ -26,9 +26,9 @@ const Algorithm = () => {
 
   let finalRender = data.map((file) => {
     return (
-      <a key={file.sha} href={`${file.html_url}`}>
+      <Link key={file.sha} to={`${name}/${file.name}`}>
         <li key={file.sha}>{file.name}</li>
-      </a>
+      </Link>
     );
   });
   return (
