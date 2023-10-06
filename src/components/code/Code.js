@@ -29,11 +29,15 @@ const Code = () => {
   }, [name, file]);
 
   return (
-    <>
+    <div>
+      <button onClick={(e) => {
+        navigator.clipboard.writeText(data)
+      }}>Copy Code</button>
+
       <SyntaxHighlighter language={lang} style={atomOne}>
         {data}
       </SyntaxHighlighter>
-    </>
+    </div>
   )
 }
 
