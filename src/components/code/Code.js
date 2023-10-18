@@ -22,6 +22,7 @@ const Code = () => {
         let text = decode(resp.data.content);
         setData(text);
       } catch (e) {
+        window.location.replace(`https://github.com/iiitv/algos/blob/master/${name}/${file}`);
         console.log(e.response, 'error');
       }
     };
