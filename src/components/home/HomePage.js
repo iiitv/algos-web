@@ -13,6 +13,7 @@ const HomePage = () => {
         console.log(resp.data);
         setData(resp.data);
       } catch (e) {
+        window.location.replace(`https://github.com/iiitv/algos/blob/master`);
         console.log(e.response, 'error');
       }
     };
