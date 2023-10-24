@@ -16,6 +16,7 @@ const Algorithm = () => {
         console.log(resp.data);
         setData(resp.data);
       } catch (e) {
+        window.location.replace(`https://github.com/iiitv/algos/blob/master/${name}`);
         console.log(e.response, 'error');
       }
     };
